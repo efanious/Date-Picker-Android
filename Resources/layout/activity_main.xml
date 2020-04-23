@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-</RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:text="Select Date"
+        android:layout_marginStart="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"/>
+    
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:textSize="20sp"
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        
+    
+</LinearLayout>
