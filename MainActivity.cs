@@ -27,7 +27,11 @@ namespace DatePicker
         {
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                dateEditText.Text = time.ToLongDateString();
+
+                
+                dateEditText.Text = time.ToString("MM/dd/yyyy");
+
+                //dateEditText.Text = time.ToLongDateString();
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
